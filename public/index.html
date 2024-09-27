@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Salas</title>
+  <style>
+    body {
+      background-color: #F1F5F9;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0F172A;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    
+    select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 0px solid #F1F5F9;
+        box-sizing: border-box; /* Adicionado */
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+        margin: 5px;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box; /* Adicionado */
+    }
+    
+    select {
+      margin-bottom: 20px;
+    }
+    
+    input[type="submit"] {
+      background-color: #0F172A;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Selecione uma Sala</h1>
+    <form action="chat.html">
+      <label for="select_room">Salas:</label>
+      <select id="select_room" name="select_room">
+        <option value="node">Node</option>
+        <option value="react">React</option>
+      </select>
+      
+      <label for="username">Username:</label>
+      <input placeholder="Username..." type="text" id="username" name="username">
+      
+      <input type="submit" value="Entrar">
+    </form>
+  </div>
+</body>
+</html>
